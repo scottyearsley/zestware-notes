@@ -20,9 +20,10 @@
     <div ng-app="notesApp" id="notes-app" >
         <div id="notes-panel-container" ng-controller="notesPanelController" ng-click="panelClick($event)">
 
-            <div class="note-panel" ng-repeat="panel in notePanels" contenteditable="true"
-                    style="border:1px dashed #666666;" ng-style="panel.style">{{panel.content}}</div>
+        <zest-note-panel ng-repeat="panel in notePanels"></zest-note-panel>
 
+<!--             <div class="note-panel" zest-prevent-bubble contenteditable="true"
+                    style="border:1px dashed #666666;" ng-style="panel.style">{{panel.content}}</div> -->
 
         </div>
     </div>
@@ -32,6 +33,7 @@
     <script src="js/foundation.min.js"></script>
     <script src="js/app/zestware.notes.app.js"></script>
     <script src="js/app/zestware.notes.services.js"></script>
+    <script src="js/app/zestware.notes.directives.js"></script>
     <script>
       $(document).foundation();
     </script>
