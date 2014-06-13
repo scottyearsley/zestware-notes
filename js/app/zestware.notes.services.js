@@ -1,0 +1,5 @@
+notesApp.service('noteService', function() {
+
+
+
+});
